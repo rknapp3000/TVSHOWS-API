@@ -1,0 +1,33 @@
+html, 
+body{ 
+    font-size: 12pt;
+}
+
+body{ 
+    background: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main { 
+    max-width: 75%;
+    margin: auto;
+}
+
+header { 
+    border-bottom:1in solid cornflowerblue
+}
+
+h1 {
+    color: #168b37;
+    font-family: Georgia, serif;
+    font-size: 40px;
+}
+
+h2, 
+h3, 
+h4, 
+h5, 
+h6 { 
+    color: blueviolet;
+}
+

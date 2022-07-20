@@ -1,0 +1,28 @@
+<div class="content">
+  <div>
+    <h1 class="showlistname">{{showsList.name}}</h1>
+    <div class="img">
+      {{#if showsList.image.medium}}
+      <img src="{{showsList.image.medium}}" alt="{{showsList.name}}" />
+      {{/if}}
+    </div>
+    <dl class="showdescriptionitems">
+      <dt>Language</dt>
+      <dd>{{showsList.language}}</dd>
+      <dt>Genres</dt>
+      <dd>
+        <ul class="genres">
+          {{#each showsList.genres}}
+          <li>{{ this }}</li>
+          {{/each}}
+        </ul>
+      </dd>
+      <dt>Average Rating</dt>
+      <dd>{{showsList.rating.average}}</dd>
+      <dt>Network Name</dt>
+      <dd>{{showsList.network.name}}</dd>
+      <dt>Summary</dt>
+      <dd>{{showsList.summary}}</dd>
+    </dl>
+  </div>
+</div>

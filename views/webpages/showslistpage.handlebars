@@ -1,0 +1,21 @@
+<div class="content">
+    {{#if lengthofsearch}}
+    <h1 class="pageName"> Shows Found </h1>
+    <h2 class="term"> The term you searched for was: {{term}} </h2>
+    <div>
+        <ul>
+            {{#each showsList}}
+            <li> <a href="/shows/{{show.id}}" class="name"> {{show.name}} </a> </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{else}}
+    <p class="not-found">We're sorry, but no results were found for {{term}}.</p>
+    {{/if}}
+</div>
+
+
+
+
+
+
